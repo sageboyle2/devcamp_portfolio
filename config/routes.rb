@@ -1,19 +1,10 @@
 Rails.application.routes.draw do
-  resources :things
-  resources :data
-  resources :contacts
-  resources :news
-  resources :blahs
-  resources :customs
-  resources :abouts
-  resources :categories
   resources :portfolios
-  get 'pages/home'
 
-  get 'pages/about'
-
-  get 'pages/contact'
-
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  
   resources :blogs
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  root to: 'pages#home'
 end
