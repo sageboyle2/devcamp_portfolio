@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/sageboyle2/sage_mercedes_view_tool
+  revision: d339fe05778c29917c201e8f86e0931a586e8823
+  specs:
+    sage_mercedes_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -186,6 +192,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.1)
+  sage_mercedes_view_tool!
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
