@@ -2,5 +2,5 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :blog
   
-  validates :content, presence: true, length: { minimum: 5, maximum: 6 }
+  validates :content, presence: true, length: { minimum: 5, maximum: 250 }
 end
