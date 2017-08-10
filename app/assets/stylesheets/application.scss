@@ -202,3 +202,16 @@ body {
   background: image-url('Sage4.jpg') no-repeat;
   background-size: cover;
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 30px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
