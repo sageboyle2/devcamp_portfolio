@@ -6,7 +6,23 @@
         <div class="row">
           <div class="col-md-4">
               <%= image_tag "Sage3square.jpg", width: 250, alt: "profile image", class: "profile-img" %>
-          </div>
+          <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
             
         <div class="col-md-8">
             <p>My name is Sage Mercedes and I am a singer/songwriter. I've been singing since I was very young and have always loved music. I play guitar, piano, and sing, as well as write and record my own music in my home studio. (it's really just my bedroom but hey, you've gotta do what you've gotta do, right?) I've wanted to be a singer for as long as I can remember. But lately I've faced reality and realized that dream may not come true, and that will be okay, because, luckily, I have other passions and talents to fall back on.</p>
