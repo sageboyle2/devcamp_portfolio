@@ -6,7 +6,11 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
+    
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -17,14 +21,13 @@
 
 <%= render 'shared/portfolio_masthead' unless logged_in? (:site_admin) %>
 
-<%= render 'shared/nav', location: 'top' %>\
+<%= render 'shared/nav', location: 'top' %>
 
 <%= alerts %>
 
 
     <%= yield %>
 
-    <!-- start of footer -->
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
@@ -34,7 +37,6 @@
         <p> &copy; 2017 | <b>Sage Mercedes</b> All rights reserved</p>
       </div>
     </footer>
-    <!-- end of footer -->
 
     <%= source_helper("application") %>
   </body>
